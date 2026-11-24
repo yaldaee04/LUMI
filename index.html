@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title> LUMI | لومی </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <!--هدر و منوی سایت-->
+        <div class="logo">LUMI</div>
+
+        <nav>
+            <a href="#">صفحه اصلی</a>
+            <a href="#">محصولات</a>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+        </nav>
+
+        <div class="cart">
+            سبد خرید 
+        </div>
+    </header>
+
+    <main>
+        <!--محتوای اصلی فروشگاه-->
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="subtitle"> YOUR SKIN , YOUR BEAUTY </P>
+            
+                <h1>
+                    زیبایی از مراقبت آغاز میشود.
+                </h1>
+
+                <p class="description">با محصولات مراقبتی لومی، زیبایی طبیعی خودت رو کشف کن.</p>
+
+                <a href="#" class="hero-btn">مشاهده محصولات</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="محصولات مراقبت پوستی"
+            </div>
+        </section>
+        <section class="products" id="products">
+
+            <div class="section-title">
+                <p>محصولات منتخب لومی</p>
+                <p>مراقبتی که پوستت لایقشه</p>
+            </div>
+
+            <div class="product-container">
+                <div class="product-card" data-category="hydration">
+                    <img src="images/product1.jpg" alt="کرم آبرسان">
+                    <h3>کرم آبرسان</h3>
+                    <h3>450000 T</h3>
+                </div>
+
+                <div class="product-card" data-category="serum">
+                    <img src="images/product2.jpg" alt="سرم ویتامین">
+                    <h3>سرم ویتامین</h3>
+                    <h3>620000 T</h3>
+            </div>
+
+            <div class="product-card" data-category="sunscreen">
+                    <img src="images/product3.jpg" alt="ضد آفتاب">
+                    <h3>ضد آفتاب</h3>
+                    <h3>380000 T</h3>
+            </div>
+        </div>
+        </section>
+        <section class="categories">
+            <div class="section-title">
+                <h2>دسته بندی محصولات</h2>
+                <p>مراقبت از پوست ، متناسب با نیاز تو</p>
+            </div>
+
+            <div class="category-container">
+                <div class="category-card">
+                    <a href="products.html?category=hydration" class="category-card" data-filter="hydration">
+                    <img src="images/category1.jpg" alt="آبرسان">
+                    <h3>آبرسان و مرطوب کننده</h3>
+                    </a> 
+                </div>
+
+                <div class="category-card">
+                    <a href="products.html?category=sunscreen" class="category-card" data-filter="sunscreen">
+                    <img src="images/category3.jpg" alt="ضدآفتاب"> 
+                    <h3>ضدآفتاب</h3> 
+                    </a>
+                </div>
+
+                <div class="category-card">
+                    <a href="products.html?category=serum" class="category-card" data-filter="serum">
+                    <img src="images/category2.jpg" alt="سرم پوستی"> 
+                    <h3>سرم های پوستی</h3> 
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!--اطلاعات پایین صفحه-->
+        <div class="footer-container">
+            
+            <div class="footer-about">
+                <h2>LUMI</h2>
+                <P>
+                    زیبایی،در سادگی معنا پیدا میکند .
+                </P>
+            </div>
+
+            <div class="footer-links">
+                <h3>راهنمای مشتریان</h3>
+                <a href="#">درباره ما</a>
+                <a href="#">تماس باما</a>
+                <a href="#">سوالات متداول</a>
+            </div>
+
+
+        </div>
+
+        <div class="footer-buttom">
+            <p>© 2026 LUMI. All rights reserved.</p>
+        </div>
+
+    </footer>
+    
+    
+
+    <!--cart drawer-->
+
+    <div class="cart-overlay"></div>
+
+    <div class="cart-sidebar">
+        
+        <div class="cart-header">
+            <h2>سبد خرید من</h2>
+            <button class="close-cart" onclick="closeCart()">×</button>
+        </div>
+
+        <div class="cart-items">
+            <!--محصولات سبد خرید اینجا نمایش داده میشن-->
+        </div>
+
+        <div class="cart-footer">
+            <h3>مجموع:<span class="cart-total">۰</span>تومان</h3>
+            <button class="checkout-btn" onclick="goToCheckout()">تکمیل سفارش</button>
+        </div>
+        
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
